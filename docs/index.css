@@ -105,6 +105,7 @@ main{
     width: 12rem;
     height: 12rem;
     margin: 1rem;
+    border-radius: 50%;
 }
 .cont-btns{
     display: flex;
@@ -135,6 +136,7 @@ main{
 .curriculo{
     border-radius: 2rem;
     padding: 0.5rem;
+    text-decoration: none;
 }
 
 .btns img{
@@ -267,6 +269,7 @@ main{
 }
 
 .curso-screen{
+    display: flex;
     height: 13rem;
     padding: 3rem;
     background-color: aqua;
@@ -291,7 +294,7 @@ main{
 }
 
 .curso-img{
- width: 100%;
+ height: 100%;
 }
 
 .info-btn{
@@ -309,6 +312,11 @@ main{
     font-size: large;
     padding: 6px;
     color: #1B1326;
+    text-decoration: none;
+}
+
+.certificate-link:hover{
+    background-color: rgb(187, 174, 0);
 }
 
 .info-window[open]{

@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    color: beige;
+    font-family: sans-serif;
+}
+body{
+    background-color: #000000;
+    min-height: 100vh;
+    min-width: 100%;
+    max-width: 100px;
+    margin: 0;
+    padding: 0;
+    
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: url(./imgs/background-image2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#head-background{
+    position: absolute;
+    z-index: 0;
+    margin: 0;
+    width: 100%;
+    opacity: 0.8;
+}
+
+
+.header-box{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+}
+.light-box{
+    width: 60%;
+    height: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 100%;
+    align-items:flex-end;
+    z-index: 2;
+}
+.disk{
+    width: 70%;
+    height: 175%;
+    margin-top: -3.5rem;
+    margin-bottom: 5rem;
+    position: absolute;
+    background-color: rgb(77, 77, 77);
+    border-radius: 0 0 200% 200%;
+    border-bottom: 100%;
+}
+.light{
+    height: 80%;
+    width: 20%;
+    border-radius: 100%;
+    background-color: rgb(255, 238, 0);
+    box-shadow: 0 0 4rem 0.4rem #fffc54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1B1326;
+    text-decoration: none;
+    font-weight: bold
+}
+
+.light:hover{
+    background-color: rgb(249, 240, 125)
+}
+
+.side-light{
+    margin-bottom: 1rem;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nome-email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile{
+    display: flex;
+    margin: 6rem 2rem 0 3rem;
+    gap: 1rem;
+}
+.profile img{
+    display: flex;
+    width: 12rem;
+    height: 12rem;
+    margin: 1rem;
+}
+.cont-btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.btns{
+    display: flex;
+    background-color: #DAD9B2;
+    border-radius: 50%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    color: black;
+    font-size: 700;
+
+}
+
+.btns:hover{
+    background-color: #a1a083;
+}
+
+.btns h2{
+    color: black;
+}
+
+.curriculo{
+    border-radius: 2rem;
+    padding: 0.5rem;
+}
+
+.btns img{
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    margin: 0.5rem;
+}
+
+
+.about-text{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    gap: 1rem;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border-radius: 1rem;
+    width: 24rem;
+    max-height: 23rem;
+    gap: 0s;
+    
+}
+
+.card-img{
+    border-radius: 1rem 1rem 0 0 ;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-info{
+    background-color: #DAD9B2;
+    border-radius: 0 0 1rem 1rem ;
+    margin: 0;
+}
+
+.card-name{
+    padding: 0.2rem;
+    color: black;
+    font-size: large;
+    margin: 3px;
+}
+
+.card-specs{
+    display: flex;
+    gap: 2rem;
+    padding: 3px;
+
+}
+
+.card-links{
+    display: flex;
+    justify-content: right;
+    
+    
+}
+
+.see-more-holder{
+    display: flex;
+    margin: 0.3rem;
+    flex: 1;
+}
+
+.see-more{
+    height: 100%;
+    flex: 1;
+    border: 0;
+    color: rgb(40, 38, 34);
+    background-color: #b8b081;
+    border-radius: 10px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+
+.see-more:hover{
+    background-color: #666147;
+}
+
+.card-link{
+    right: 0;
+    margin: 0.3rem;
+    flex: 1;
+    border: 0;
+    color: rgb(40, 38, 34);
+    background-color: #b8b081;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px 14px;
+    text-decoration: none;
+
+}
+
+.card-link:hover{
+    background-color: #666147;
+}
+
+.curso-card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(101, 101, 101);
+    border: #b0b0b0 4px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 24rem;
+    gap: 4px;
+    justify-content: space-between;
+
+}
+
+.curso-screen{
+    height: 13rem;
+    padding: 3rem;
+    background-color: aqua;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.curso-name{
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    margin: 3px;
+
+}
+
+.curso-btns{
+    display: flex;
+    justify-content: right;
+    margin: 3px;
+    gap: 0.7rem;
+}
+
+.curso-img{
+ width: 100%;
+}
+
+.info-btn{
+    background-color: rgb(255, 238, 0);
+    border:0;
+    border-radius: 10px;
+    font-size: large;
+    padding: 6px;
+    color: #1B1326;
+}
+
+.certificate-link{
+    background-color: rgb(255, 238, 0);
+    border-radius: 10px;
+    font-size: large;
+    padding: 6px;
+    color: #1B1326;
+}
+
+.info-window[open]{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+   
+    background-color: #000;
+    border-radius: 1rem;
+    border: rgb(255, 238, 0) 2px solid;
+    outline: 0;    
+    padding: 1.5rem;
+    gap: 1rem;
+    
+}
+
+.upper-things{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.info-img{
+    display: flex;
+    width: 60vh;
+    
+}
+
+.info-img img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 70vh;
+}
+.infos h1{
+    display: flex;
+    width: 100%;
+}
+
+.btn-close{
+    background-color: rgb(255, 238, 0);
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: 0;
+    border: 0;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 5px;
+}
+
+.infos h4{
+    font-weight: normal;
+}

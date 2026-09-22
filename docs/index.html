@@ -2,10 +2,172 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="stylesheet" href="./index.css">
     <meta charset="UTF-8">
     <title>Portfólio - DARCY SALMAZZO NEGRAO</title>
 </head>
 <body>
-    <h1>Bem vindo ao Portfólio de DARCY SALMAZZO NEGRAO</h1>
+    <img src="./imgs/background-image.png" alt="fundo" id="head-background">
+    <main>
+        <div class="header-box">
+            <div class="disk"></div>
+            <div class="light-box">
+                
+                <a class="light side-light" href="#sobre-mim">
+                    Sobre mim
+                </a>
+                <a class="light" href="#projetos">
+                    Projetos
+                </a>
+                <a class="light side-light" href="#cursos">
+                    Cursos
+                </a>
+            </div>
+        </div>
+        <div class="profile">
+            <div>
+                <img src="./imgs/pfp.png" >
+            </div>
+            <div class="contatos">
+                <div class="nome-email">
+                    <h1>Darcy Salmazzo Negrão</h1>
+                    <h4>darcyasss@gmail.com</h4>
+                </div>
+                <div class="cont-btns">
+                    <a class="btns"><img src="./imgs/github.png" alt="github"></a>
+                    <a class="btns"><img src="./imgs/linkedin.png" alt="linkedin"></a>
+                    <button class="btns curriculo"><h2>Currículo</h2></button>
+                </div>
+            </div>
+        </div>
+        <div class="about-text" id="sobre-mim">
+            <h1>
+                SOBRE MIM
+            </h1>
+            <h4>
+                Comecei a me interessar em na área da programação em 2023 quando entrei na ETEC Ilza Nascimento Pintus, a partir daí aprendi muito sobre diversas linguagens e ferramentas como SQL, JavaScript, C#, metodologia Scrum etc… . Agora estou cursos Desenvolvimento de Software Multiplataforma na FATEC de Jacareí onde trabalho bem mais meu raciocínio lógico e obtenho mais conhecimentos na área.
+            </h4>
+        </div>
+        <div class="about-text">
+            <h1>
+                OBJETIVOS
+            </h1>
+            <h4>
+                Comecei a me interessar em na área da programação em 2023 quando entrei na ETEC Ilza Nascimento Pintus, a partir daí aprendi muito sobre diversas linguagens e ferramentas como SQL, JavaScript, C#, metodologia Scrum etc… . Agora estou cursos Desenvolvimento de Software Multiplataforma na FATEC de Jacareí onde trabalho bem mais meu raciocínio lógico e obtenho mais conhecimentos na área.
+            </h4>
+        </div>
+        <div class="about-text" id="projetos">
+            <h1>
+                PROJETOS
+            </h1>
+        </div>
+        <div class="projects">
+            <div class="project-card">
+                <img class="card-img" src="./imgs/narvana.jpeg" alt="projeto">
+                <div class="card-info">
+                    <div class="card-name">
+                        Narvana - TCC ETEC
+                    </div>
+                    <div class="card-specs">
+                        <div class="see-more-holder"><button class="see-more" onclick="callDialog(0)">Ver mais</button></div>
+                        <div class="card-links">
+                            <a class="card-link" href="https://github.com/Darcyasn08/Narvana">Github</a>
+                            <a class="card-link" href="https://pirarucu-games.itch.io/narvana">Projeto</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="card-img" src="./imgs/sm-logo.png" alt="projeto">
+                <div class="card-info">
+                    <div class="card-name">
+                        Sprint Master - ABP FATEC
+                    </div>
+                    <div class="card-specs">
+                        <div class="see-more-holder"><button class="see-more" onclick="callDialog(1)">Ver mais</button></div>
+                        <div class="card-links">
+                            <a class="card-link" href="https://github.com/TechFellasAbp/sprint-master">Github</a>
+                            <a class="card-link" href="">Projeto</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="card-img" src="./imgs/pikpik-logo.jpeg" alt="projeto">
+                <div class="card-info">
+                    <div class="card-name">
+                        Pikpik likes tv - Pessoal
+                    </div>
+                    <div class="card-specs">
+                        <div class="see-more-holder"><button class="see-more" onclick="callDialog(2)">Ver mais</button></div>
+                        <div class="card-links">
+                            <a class="card-link" href="https://sharkhivestudios.itch.io/pikpik-likes-tv">Projeto</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-text" id="cursos">
+            <h1>
+                CURSOS, CERTIFICADOS E FORMAÇÕES ACADÊMICAS 
+            </h1>
+            <h2>TERMINADOS</h2>
+        </div>
+        <div class="projects">
+            <div class="curso-card">
+                <div class="curso-screen">
+                    <img class="curso-img" src="./imgs/etec-logo.png" alt="logo-etec">
+                </div>
+                <div class="curso-name">
+                    Ensino médio completo na ETEC
+                </div>
+                <div class="curso-btns">
+                    <button class="info-btn">
+                        Info
+                    </button>
+                    <a class="certificate-link">Certificado</a>
+                </div>
+            </div>
+            <div class="curso-card">
+                <div class="curso-screen">
+                    <img class="curso-img" src="./imgs/etec-logo.png" alt="logo-etec">
+                </div>
+                <div class="curso-name">
+                    Técnico em Desenvolvimento de Sistemas na ETEC
+                </div>
+                <div class="curso-btns">
+                    <button class="info-btn">
+                        Info
+                    </button>
+                    <a class="certificate-link">Certificado</a>
+                </div>
+            </div>
+            <div class="curso-card">
+                <div class="curso-screen">
+                    <img class="curso-img" src="./imgs/fatec-logo.png" alt="logo-etec">
+                </div>
+                <div class="curso-name">
+                    Ensino médio completo na ETEC
+                </div>
+                <div class="curso-btns">
+                    <button class="info-btn">
+                        Info
+                    </button>
+                    <a class="certificate-link">Certificado</a>
+                </div>
+            </div>
+        </div>
+        
+        <dialog class="info-window" id="info-dialog">
+            
+        </dialog>
+
+        <script src="./index.js"></script>
+       
+    </main>
+    
 </body>
 </html>

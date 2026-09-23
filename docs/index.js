@@ -27,6 +27,22 @@ const data = [
         descricao:"Esse projeto foi feito como jogo para a GMTK game jam 2026, essa game jam teve como tema: countdown e o jogo foi feito em 4 dias, após o fim do periodo da game jam eu e a minha parceira continuamos a melhorar e consertar bug dentro dele",
         imagem: "./imgs/pikpik-logo.jpeg"
     },
+    {
+        titulo: "Ensino médio completo - ETEC ",
+        ano: "2025",
+        competencias:["Grade curricular do ensino médio","Trabalho em equipe"] ,
+        subtitulo:"Experiência",
+        subtexto:"Tive umas experiencia normal de ensino medio na ETEC, quase falta de professores e estrutura boa",
+        imagem: "./imgs/etec_ilza.png"
+    },
+    {
+        titulo: "Técnico em Desenvolvimento de Sistemas - ETEC",
+        ano: "2025",
+        competencias:["PHP","CSS","Java","C#","React Native","MySQL","HTML","Trabalho em equipe","Logica de programação"] ,
+        subtitulo:"Experiência",
+        subtexto:"No técnico pude aprender o básico de diversas linguagens e tive diversas experiencias práticas durantes os 3 anos",
+        imagem: "./imgs/etec_ilza.png"
+    },
 ]
 
 const dialogBox = document.getElementById("info-dialog");

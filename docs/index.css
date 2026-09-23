@@ -4,6 +4,9 @@
     color: beige;
     font-family: sans-serif;
 }
+.small-space{
+    height: 2rem;
+}
 body{
     background-color: #000000;
     min-height: 100vh;
@@ -304,6 +307,10 @@ main{
     font-size: large;
     padding: 6px;
     color: #1B1326;
+}
+
+.info-btn:hover{
+    background-color: rgb(187, 174, 0);
 }
 
 .certificate-link{

@@ -4,6 +4,15 @@
     color: beige;
     font-family: sans-serif;
 }
+
+a {
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
 .small-space{
     height: 2rem;
 }
@@ -44,27 +53,49 @@ main{
     width: 100%;
 }
 .light-box{
-    width: 60%;
+    width: 40%;
     height: 90%;
-    margin: 1rem;
+    margin: 5rem;
     display: flex;
     justify-content: space-around;
     border-radius: 100%;
     align-items:flex-end;
     z-index: 2;
 }
-.disk{
-    width: 70%;
-    height: 175%;
-    margin-top: -3.5rem;
+.disk1{
+    width: 68%;
+    height: 250%;
+    margin-top: -5rem;
     margin-bottom: 5rem;
     position: absolute;
-    background-color: rgb(77, 77, 77);
-    border-radius: 0 0 200% 200%;
+    background-color: #373737;
+    border-radius:50%;
+    border-bottom: 100%;
+}
+
+.disk2{
+    width: 50%;
+    height: 200%;
+    margin-top: -1rem;
+    margin-bottom: 5rem;
+    position: absolute;
+    background-color: #666666;
+    border-radius: 50%;
+    border-bottom: 100%;
+}
+
+.disk3{
+    width: 40%;
+    height: 175%;
+    margin-top: 12px;
+    margin-bottom: 5rem;
+    position: absolute;
+    background-color: #949494;
+    border-radius: 50%;
     border-bottom: 100%;
 }
 .light{
-    height: 80%;
+    height: 100%;
     width: 20%;
     border-radius: 100%;
     background-color: rgb(255, 238, 0);
@@ -82,7 +113,7 @@ main{
 }
 
 .side-light{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .contatos{
@@ -100,8 +131,10 @@ main{
 
 .profile{
     display: flex;
-    margin: 6rem 2rem 0 3rem;
+    margin: 10rem 2rem 0 3rem;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .profile img{
     display: flex;
@@ -157,8 +190,13 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 50%;
+    width: 40%;
     gap: 1rem;
+    text-shadow:0 0 0.5rem #000;
+}
+
+.about-text h3, h1{
+    text-shadow: 0 0 3rem #000000;
 }
 
 .projects{
@@ -262,23 +300,24 @@ main{
     display: flex;
     flex-direction: column;
     background-color: rgb(101, 101, 101);
-    border: #b0b0b0 4px solid;
     border-radius: 1rem;
     padding: 1rem;
     width: 24rem;
     gap: 4px;
     justify-content: space-between;
 
+    box-shadow: 0 0 2rem #000;
 }
 
 .curso-screen{
     display: flex;
     height: 13rem;
     padding: 3rem;
-    background-color: aqua;
+    background-color: #63C3CE;
     border-radius: 1rem;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 0 0.5rem #00212D;
 }
 
 .curso-name{
@@ -292,8 +331,10 @@ main{
 .curso-btns{
     display: flex;
     justify-content: right;
+    align-items: center;
     margin: 3px;
     gap: 0.7rem;
+    font-weight: bold;
 }
 
 .curso-img{
@@ -387,4 +428,29 @@ main{
 
 .infos h4{
     font-weight: normal;
+}
+
+.curso-specs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.holes{
+    display: flex;
+    gap: 0.5rem;
+    align-items: end;
+}
+
+.hole{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #525859;
+    border-radius: 50%;
+
+}
+
+@media (max-width:550px){
+    .about-text{
+        width: 70%;
+    }
 }

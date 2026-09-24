@@ -19,7 +19,7 @@ const data = [
         imagem: "./imgs/sm-logo.png"
     },
     {
-        titulo: "Pikpik likes TV - Pessoal",
+        titulo: "Pikpik likes TV! - Pessoal",
         ano: "2026",
         competencias:["GdScript","Trabalho em equipe","Logica de programação"] ,
         subtitulo:"Contribuição",

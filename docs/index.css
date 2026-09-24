@@ -25,6 +25,15 @@ body{
     padding: 0;
     
 }
+
+.abd-light{
+    position: absolute;
+    border-radius: 0;
+    top: -22rem;
+    opacity: 0.5;
+    z-index: 0;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -52,6 +61,10 @@ main{
     position: fixed;
     width: 100%;
 }
+
+.up{
+    margin-top: -2rem;
+}
 .light-box{
     width: 40%;
     height: 90%;
@@ -71,28 +84,33 @@ main{
     background-color: #373737;
     border-radius:50%;
     border-bottom: 100%;
+    z-index: 2;
 }
 
 .disk2{
     width: 50%;
-    height: 200%;
-    margin-top: -1rem;
+    height: 225%;
+    margin-top: -1.8rem;
     margin-bottom: 5rem;
     position: absolute;
     background-color: #666666;
     border-radius: 50%;
     border-bottom: 100%;
+    box-shadow: 0 -0.6rem 1.5rem 0.5rem #46555e78;
+    z-index: 2;
 }
 
 .disk3{
     width: 40%;
     height: 175%;
-    margin-top: 12px;
+    margin-top: 16px;
     margin-bottom: 5rem;
     position: absolute;
     background-color: #949494;
     border-radius: 50%;
     border-bottom: 100%;
+    box-shadow: 0 -0.6rem 1.5rem 0.1rem #25343d78;
+    z-index: 2;
 }
 .light{
     height: 100%;
@@ -136,7 +154,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
-.profile img{
+.pfp-pic{
     display: flex;
     width: 12rem;
     height: 12rem;
@@ -146,7 +164,7 @@ main{
 .cont-btns{
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 .btns{
     display: flex;
@@ -165,13 +183,13 @@ main{
     background-color: #a1a083;
 }
 
-.btns h2{
+.btns h3{
     color: black;
 }
 
 .curriculo{
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 0.7rem;
     text-decoration: none;
 }
 
@@ -442,9 +460,9 @@ main{
 }
 
 .hole{
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #525859;
+    width: 1rem;
+    height: 1rem;
+    background-color: #323636;
     border-radius: 50%;
 
 }

@@ -46,8 +46,15 @@ const data = [
 ]
 
 const dialogBox = document.getElementById("info-dialog");
+const body = document.getElementById("body")
+var $header = document.getElementById("header")
+const win = window
+const docEl = document.documentElement
 
-
+win.onscroll = function(){
+   var sTop = (this.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+   $header.className =  sTop > 300 ? "header-box up": "header-box" ;
+};
 
 
 function callDialog(id){
@@ -112,6 +119,12 @@ function callDialog(id){
     }
     
 }
+
+$(body).scroll(function(){
+    if ($this.scrollTop() > 200 ) {
+          $('#header').css('margin-top', '-1rem')
+    }
+})
 
 function listCreator(list){
     let lista = ""

@@ -14,7 +14,7 @@ button{
 }
 
 .small-space{
-    height: 2rem;
+    height: 1rem;
 }
 body{
     background-color: #000000;
@@ -253,10 +253,10 @@ main{
 .projects{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2rem;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 10rem;
 }
 
 .project-card{

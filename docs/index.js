@@ -2,7 +2,7 @@
 const data = [
     {
         titulo: "Narvana - TCC ETEC",
-        ano: "2025",
+        ano: "Decorrer de 2025",
         competencias:["GdScript","Trabalho em equipe","Logica de programação","Blender"] ,
         subtitulo:"Contribuição",
         subtexto:"Trabalhei principalmente na programação dos inimigos, bosses e as mecânicas do player do jogo, também fui responsavel por pensar em boa parte da história e como algumas mecanicas funcionariam",
@@ -11,7 +11,7 @@ const data = [
     },
     {
         titulo: "Sprint Master - ABP FATEC",
-        ano: "2026",
+        ano: "1ºsemestre de 2026",
         competencias:["JavaScript","HTML","CSS","PostgreSQL","Metodologia Scrum","Trabalho em equipe","Logica de programação"] ,
         subtitulo:"Contribuição",
         subtexto:"Trabalhei principalmente na area de back-end com requisições HTTP, mas também fui reponsavel pela integração do back e o front de algumas telas como a de dashboard",
@@ -20,11 +20,11 @@ const data = [
     },
     {
         titulo: "Pikpik likes TV! - Pessoal",
-        ano: "2026",
+        ano: "Julho de 2026",
         competencias:["GdScript","Trabalho em equipe","Logica de programação"] ,
         subtitulo:"Contribuição",
         subtexto:"Trabalhei principalmente na programação de minigames",
-        descricao:"Esse projeto foi feito como jogo para a GMTK game jam 2026, essa game jam teve como tema: countdown e o jogo foi feito em 4 dias, após o fim do periodo da game jam eu e a minha parceira continuamos a melhorar e consertar bug dentro dele",
+        descricao:"Esse projeto foi feito como jogo para a GMTK game jam 2026, essa game jam teve como tema: countdown e o jogo foi feito em 4 dias, após o fim do periodo da game jam eu e a minha parceira continuamos a melhorar e consertar bugs dentro dele",
         imagem: "./imgs/pikpik-logo.jpeg"
     },
     {
@@ -48,12 +48,14 @@ const data = [
 const dialogBox = document.getElementById("info-dialog");
 const body = document.getElementById("body")
 var $header = document.getElementById("header")
+var $light = document.getElementById("light")
 const win = window
 const docEl = document.documentElement
 
 win.onscroll = function(){
    var sTop = (this.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
    $header.className =  sTop > 300 ? "header-box up": "header-box" ;
+   $light.className =  sTop > 300 ? "nothing": "abd-light" ;
 };
 
 

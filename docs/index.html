@@ -9,8 +9,19 @@
 <body id="body">
     <img src="./imgs/background-image.png" alt="fundo" id="head-background">
     <main>
+        
         <div class="header-box" id="header">
-            <div class="disk1"></div>
+            <img class="abd-light" src="./imgs/abduction-darcy.png" id="light">
+            <div class="disk1">
+                <div class="light-pair">
+                    <div class="lil-light"></div>
+                    <div class="lil-light low"></div>
+                </div>
+                <div class="light-pair">
+                    <div class="lil-light low"></div>
+                    <div class="lil-light"></div>
+                </div>
+            </div>
             <div class="disk2"></div>
             <div class="disk3"></div>
             <div class="light-box">
@@ -27,7 +38,7 @@
             </div>
         </div>
         <div class="profile">
-             <img class="abd-light" src="./imgs/abduction-darcy.png">
+             
             <div>
                 <img src="./imgs/pfp.jpeg" class="pfp-pic" >
             </div>
@@ -71,7 +82,7 @@
                 <img class="card-img" src="./imgs/narvana.jpeg" alt="projeto">
                 <div class="card-info">
                     <div class="card-name">
-                        Narvana - TCC ETEC
+                        Narvana - Acadêmico
                     </div>
                     <div class="card-specs">
                         <div class="see-more-holder"><button class="see-more" onclick="callDialog(0)">Ver mais</button></div>
@@ -87,13 +98,13 @@
                 <img class="card-img" src="./imgs/sm-logo.png" alt="projeto">
                 <div class="card-info">
                     <div class="card-name">
-                        Sprint Master - ABP FATEC
+                        Sprint Master - Acadêmico
                     </div>
                     <div class="card-specs">
                         <div class="see-more-holder"><button class="see-more" onclick="callDialog(1)">Ver mais</button></div>
                         <div class="card-links">
                             <a class="card-link" href="https://github.com/TechFellasAbp/sprint-master">Github</a>
-                            <a class="card-link" href="">Projeto</a>
+                            <a class="card-link" href="https://sprint-master.onrender.com/index.html">Projeto</a>
                         </div>
                         
                     </div>
@@ -182,7 +193,7 @@
                     </div>
                     <div class="curso-btns">
                         Terminado
-                        <a class="certificate-link">Certificado</a>
+                        <a class="certificate-link" onclick="window.open('./certificates/Excel.pdf', '_blank', 'fullscreen=yes'); return false;">Certificado</a>
                     </div>
                 </div>
             </div>

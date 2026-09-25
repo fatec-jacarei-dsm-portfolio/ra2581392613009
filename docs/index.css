@@ -28,10 +28,16 @@ body{
 
 .abd-light{
     position: absolute;
+    align-self: center;
     border-radius: 0;
-    top: -22rem;
+    top: -20rem;
     opacity: 0.5;
     z-index: 0;
+    pointer-events: none;
+}
+
+.nothing{
+    display: none;
 }
 
 main{
@@ -74,6 +80,7 @@ main{
     border-radius: 100%;
     align-items:flex-end;
     z-index: 2;
+    text-align: center;
 }
 .disk1{
     width: 68%;
@@ -84,7 +91,11 @@ main{
     background-color: #373737;
     border-radius:50%;
     border-bottom: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
     z-index: 2;
+    min-width: 512px;
 }
 
 .disk2{
@@ -98,6 +109,7 @@ main{
     border-bottom: 100%;
     box-shadow: 0 -0.6rem 1.5rem 0.5rem #46555e78;
     z-index: 2;
+    min-width: 375px;
 }
 
 .disk3{
@@ -111,6 +123,7 @@ main{
     border-bottom: 100%;
     box-shadow: 0 -0.6rem 1.5rem 0.1rem #25343d78;
     z-index: 2;
+    min-width: 300px;
 }
 .light{
     height: 100%;
@@ -123,11 +136,31 @@ main{
     justify-content: center;
     color: #1B1326;
     text-decoration: none;
-    font-weight: bold
+    font-weight: bold;
+    min-width: 60px;
 }
 
 .light:hover{
     background-color: rgb(249, 240, 125)
+}
+
+.light-pair{
+    display: flex;
+    gap: 2.5rem;
+    margin: 2.2rem 3rem ;
+}
+
+.lil-light{
+    
+    width: 1.8rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 238, 0);
+    z-index: 4;
+}
+
+.low{
+    margin-top: 1rem;
 }
 
 .side-light{
@@ -149,7 +182,7 @@ main{
 
 .profile{
     display: flex;
-    margin: 10rem 2rem 0 3rem;
+    margin: 12rem 2rem 0 3rem;
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: center;

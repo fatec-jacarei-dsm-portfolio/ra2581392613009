@@ -1,0 +1,173 @@
+
+.uc_bt-icon{
+ width:30px;
+ height:30px;
+ border-radius: 15px;
+ border: 1px solid var(--uc_bs-alink);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-shrink: 0;
+ font-size: 12px;
+ color: var(--uc_bs-alink);
+ text-decoration: none;
+}
+.uc_bt-icon:hover {
+  box-shadow: var(--uc_control-shadow)!important;
+  color: var(--uc_bs-ahover);
+  font-size: 14px;
+  border-width:2px;
+}
+.uc_bticon   {font-size:var(--uc_bt-texto-size);}
+
+/* ------------ BOTAO ------------------------------------- */
+.button{
+ border-radius: var(--uc_button-border-radius) !important;
+ border: var(--uc_border-acolor) !important;
+ background-color: var(--uc_button-background) !important; 
+ color: var(--uc_bs-alink) !important;
+ margin-right:3px;
+ font-size:var(--uc_texto-size) !important;
+ max-width: 180px; 
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ text-decoration: none;
+}
+.button:hover {
+ box-shadow: var(--uc_control-shadow) !important;
+  color: var(--uc_bs-ahover);
+/*background-color:var(--uc_border-acolor)!important;*/
+/*font-weight:700;*/
+ border-width:2px;
+}
+.button:active {
+ color:var(--uc_bs-aactive); 
+}
+
+/* ---*/
+
+.btn{
+ border-radius: var(--uc_button-border-radius) !important;
+ border: var(--uc_border-acolor) !important;
+ background-color: var(--uc_bs-white); 
+ color: var(--uc_bs-alink) !important;
+ margin-right:3px;
+ font-size:var(--uc_texto-size) !important;
+ max-width: 180px; 
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ text-decoration: none;
+}
+.btn:hover {
+ box-shadow: var(--uc_control-shadow) !important;
+  color: var(--uc_bs-ahover);
+/*background-color:var(--uc_border-acolor)!important;*/
+/*font-weight:700;*/
+ border-width:2px;
+}
+.btn:active {
+ color:var(--uc_bs-aactive); 
+}
+
+/* ---*/
+.uc_btdefault {
+ border-radius: var(--uc_button-border-radius) !important;
+ border: var(--uc_border-acolor) !important;
+ background-color: var(--uc_button-background) !important; 
+ color: var(--uc_bs-alink) !important;
+ margin-right:3px;
+ font-size:var(--uc_texto-size) !important;
+ max-width: 180px; 
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ text-decoration: none;
+}
+.uc_btdefault:hover {
+ box-shadow: var(--uc_control-shadow) !important;
+  color: var(--uc_bs-ahover);
+/*background-color:var(--uc_border-acolor)!important;*/
+/*font-weight:700;*/
+ border-width:2px;
+}
+.uc_btdefault:active {
+ color:var(--uc_bs-aactive); 
+}
+
+/* ---*/
+.uc_bt {
+  background-color: var(--uc_bs-white); 
+ border-radius: var(--uc_button-border-radius) !important;
+ border: var(--uc_border-acolor) !important;
+ margin-right:3px;
+ font-size:var(--uc_texto-size) !important;
+ max-width: 180px; 
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+ text-decoration: none;
+ text-align:center;
+}
+.uc_bt:hover {
+ box-shadow: var(--uc_control-shadow) !important;
+  color: var(--uc_bs-ahover);
+/*background-color:var(--uc_border-acolor)!important;*/
+/*font-weight:700;*/
+ border-width:2px;
+}
+.uc_bt:active {
+ color:var(--uc_bs-aactive); 
+
+}
+.bt_iconselected {
+	border: 1px solid red !important;
+}
+
+/* --- */
+.uc_bticon {
+  padding:3px;
+ color: var(--uc_bs-alink) !important;
+}
+
+.uc_bticon:hover {
+ box-shadow: var(--uc_control-shadow)!important;
+  color: var(--uc_bs-ahover) !important;
+transition: background-color .1s ease;
+}
+.uc_bticon:active {
+ color:var(--uc_bs-aactive); 
+
+}
+
+.uc_bticon12pt {
+ font-size:12pt;
+ background-color: var(--uc_button-iconbackground);
+ padding:3px;
+ color: var(--uc_bs-alink) !important;
+}
+.uc_bticon12pt:hover {
+ box-shadow: var(--uc_control-shadow)!important;
+  color: var(--uc_bs-ahover) !important;
+transition: background-color .1s ease;
+}
+.uc_bticon12pt:active {
+ color:var(--uc_bs-aactive); 
+}
+
+
+.uc_btoutblue 			{color: var(--uc_bs-blue); background-color: inherit; border:1px solid var(--uc_bs-blue);}
+.uc_btoutblueclear 	{color: var(--uc_bs-blue); background-color: inherit; border:1px solid inherit;}
+.uc_btoutblack 			{color: black;background-color: inherit;border:1px solid #000000 !important;}
+.uc_btoutred 			  {color: black;background-color: inherit; border:1px solid var(--uc_bs-red) !important;}
+.uc_btoutgreen 			{color: black;background-color: inherit; border:1px solid var(--uc_bs-green) !important;}
+.uc_btoutorange 		{color: black;background-color: inherit; border:1px solid var(--uc_bs-orange) !important;}
+
+/* ------------ BOTAO ------------------------------------- */
+
+

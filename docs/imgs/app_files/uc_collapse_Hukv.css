@@ -1,0 +1,13 @@
+
+
+/* ------------ COLLAPSE ------------------------------------ */
+.uc_collapsewidth250			{max-width:240px; padding:5px;}
+.uc_collapse 				{background:tomato;}
+.uc_collapsesummary 			{background:blue;}
+
+.uc_collapsecontent	{margin-top:9px;  margin-right:25px;}
+.uc_collapseicone 	{position: absolute; text-align:right; color: var(--bs-link-color);}
+.uc_collapsetext  	{position: absolute; z-index: 2; left: -280px; width:300px;  padding:10px; border: var(--uc_border);  color: var(--uc_bs-texto); background-color:white;}
+
+
+/* ------------ COLLAPSE ------------------------------------ */

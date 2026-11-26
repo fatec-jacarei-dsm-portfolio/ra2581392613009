@@ -1,0 +1,11 @@
+
+/* ------------ HEADER ------------------------------------- */
+.uc_header 	{display:flex; flex-direction:column;justify-content:center;align-items: center;align-content: center;margin: 0px;padding-left: 10px;padding-right: 10px;height: 200px;background: var(--uc_header-backgrond);margin-top:70px;	}
+.uc_header h1	{font-family: var(--uc_texto-font);	font-size: var(--uc_header-size); color: var(--uc_header-cor);}
+.uc_header p 	{font-family: var(--uc_texto-font); font-size: var(--uc_texto-size) !important; font-weight:300; color: var(--uc_header-cor);}
+/* ------------ HEADER ------------------------------------- */
+
+
+
+
+

@@ -1,0 +1,80 @@
+
+    /* body { */
+      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+      /* background: #f4f6f9; */
+      /* margin: 0; */
+      /* padding: 2rem; */
+    /* } */
+
+    .uc_prontuario-container {
+      display: flex;
+      gap: 30px;
+      background: #fff;
+      padding: 5px;
+      border: 1px solid #ced4da;
+      flex-wrap: wrap;
+    }
+
+    .uc_prontuario-coluna {
+      flex: 1;
+      min-width: 250px;
+      padding: 10px;
+      border-right: 1px solid #eee;
+    }
+
+    .uc_prontuario-coluna:last-child {
+      border-right: none;
+    }
+
+    .uc_prontuario-perfil {
+      text-align: center;
+    }
+
+    .uc_prontuario-perfil img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .uc_prontuario-secao-titulo {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      display: inline-block;
+      color: #333;
+    }
+
+    .uc_prontuario-info-item {
+      margin-bottom: 0.8rem;
+    }
+
+    .uc_prontuario-info-item span {
+      color: #555;
+      /* font-weight: bold; */
+    }
+
+    .uc_prontuario-frequencia {
+      background: #e8f5e9;
+      padding: 0.8rem;
+      border-radius: 8px;
+      text-align: center;
+      /* font-weight: bold; */
+      color: #2e7d32;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .uc_prontuario-container {
+        flex-direction: column;
+      }
+
+      .uc_prontuario-coluna {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+      }
+
+      .uc_prontuario-coluna:last-child {
+        border-bottom: none;
+      }
+    }

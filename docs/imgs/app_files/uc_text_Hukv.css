@@ -1,0 +1,35 @@
+/* --------------------------------------------------------- */
+.uc_textobranco {color:white;}
+.uc_link  {color: var(--bs-link-color);}
+.uc_textstrike  {text-decoration: line-through;}
+.resumo{position:fixed;top:20px;left: 50%;z-index: 2000;}
+.uc_text-align-right {text-align:right;}
+.uc_textowrap {word-break:break-all; white-space: normal; overflow-wrap: break-word;}
+.uc_textolider {--bs-text-opacity: 1; font-weight: 300; font-family:var(--uc_lead-font); color:var(--uc_lead-cor); font-size:var(--uc_lead-size); font-weight:500;}
+.uc_textobig {font-family:var(--uc_texto-font); color:var(--uc_bs-texto); font-size:calc(var(--uc_texto-size) + 1rem);   font-weight:500;}
+.uc_textotitulo         {font-size:var(--uc_texto_titulo-size); font-weight:500;text-transform: none;   letter-spacing: .6px;   text-decoration: none;	text-align: left;}
+.uc_textosubtitulo	    {font-family:var(--uc_texto-font); color:var(--uc_bs-texto);   font-size:var(--uc_texto_subtitulo-size); font-weight:550;}
+.uc_textoborderbottom	{border-bottom:1px solid var(--uc_borderbottom); width:100%;}
+.uc_textcenter 		    {text-align: center!important;}
+.uc_textolight		    {font-weight: 300!important;}
+.uc_textolabel 		    {font-size: var(--uc_texto_xsm);   font-weight: 10;}
+.uc_textopequeno	    {font-size: var(--uc_texto_xsm) !important;   font-weight: 10;}
+.uc_linhaduascolunascomtraco {display:flex; flex-direction:column;justify-content:space-between;padding-top:10px;padding-bottom:10px;border-bottom: 1px solid var(--uc_bs-border); }
+.uc_textobold           {font-weight:550;}
+.uc_label 		        {font-size: var(--uc_table-textotitle-size);}
+
+.uc_red     {background-color: red !important;}
+
+/* ---------------------------------------------------------- */
+.uc_text-ac {  text-align: center;}
+.uc_text-ar {  text-align: right;}
+.uc_text-al {  text-align: left;}
+
+.uc_texto2-titulo {
+    margin-bottom: 10px;
+    font-size: var(--uc_texto-size);
+    font-weight: 600;
+}
+.uc_texto2 {
+    font-size: var(--uc_textocard-size);
+}

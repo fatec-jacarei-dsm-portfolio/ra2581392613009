@@ -1,0 +1,17 @@
+/*
+body {
+margin: 0px; padding:0px; color:var(--uc_bs-texto) !important;
+ font-family: var(--uc_texto-font) !important; 
+font-size: var(--uc_texto-size) !important; 
+background-color: var(--bs-body-bg) !important;
+}
+
+  desligar o objeto design system do Gx 
+.bodylogin {
+   display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-direction: column;
+    min-height: 100vh;
+}
+*/

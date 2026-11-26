@@ -1,0 +1,126 @@
+
+    .uc_timeline {
+      max-width: 900px;
+      margin: auto;
+      position: relative;
+      padding-left: 30px;
+    }
+
+	.uc_timeline::before {
+	  content: "x";
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 15px;
+	  width: 2px;
+	  background-color: #007BFF;
+	}
+
+    .uc_timeline-date-block {
+      margin-bottom: 3rem;
+    }
+
+    .uc_timeline-date-header {
+      position: relative;
+      background: #4fa1f9;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+	.uc_timeline-date-header::before {
+	  content: "";
+	  position: absolute;
+	  left: -13px;
+	  top: 50%;
+	  transform: translate(-50%, -50%);
+	  width: 15px;
+	  height: 15px;
+	  background-color: #4fa1f9;
+	 border: 3px solid inherit;
+	  border-radius: 50%;
+	  z-index: 2;
+	}
+
+    .uc_timeline-entry {
+      background: #fff;
+      border-left: 3px solid #e0e0e0;
+      padding: 0;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .uc_timeline-entry-header {
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      background: #f0f2f5;
+      transition: background 0.3s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .uc_timeline-entry-header:hover {
+      background: #e0e4e8;
+    }
+
+    .uc_timeline-entry-header h3 {
+      margin: 0;
+      font-size: var(--uc_texto-size);
+    }
+
+    .uc_timeline-entry-details {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      padding: 0 1.5rem;
+    }
+
+    .uc_timeline-entry.open .entry-details {
+      max-height: 1000px;
+      padding-bottom: 1rem;
+    }
+
+    .uc_timeline-entry small {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .uc_timeline-meta {
+      margin-top: 0.3rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .uc_timeline-section {
+      margin-top: 0.7rem;
+      font-size: 0.95rem;
+    }
+
+    .uc_timeline-section strong {
+      color: #007BFF;
+    }
+
+    .uc_timeline-sentimento {
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      background: #e3f2fd;
+      color: #007BFF;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin-top: 0.3rem;
+    }
+
+    .uc_timeline-arrow {
+      font-size: 1rem;
+      transform: rotate(0deg);
+      transition: transform 0.3s;
+    }
+
+    .uc_timeline-entry.open .arrow {
+      transform: rotate(90deg);
+    }

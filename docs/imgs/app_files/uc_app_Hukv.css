@@ -1,0 +1,1067 @@
+
+/*
+	Dispositivo	Largura (em px)	Observações
+	iPhone (portrait)	320–414px	Usar até max-width: 480px
+	iPad (portrait)		768px	iPad Mini e padrão em pé
+	iPad (landscape)	1024px	Horizontal, tablets grandes
+	Desktop				1025px e acima	Telas largas
+*/
+
+:root {
+
+  --color-blue-petroleum: 	#34495ec4; 
+  --color-blue-petr-gray: 	#555f68;
+
+  --color-red-broadcast: 	#ff3b3070;
+  --color-red: 				#ff3b30; 
+  --color-red-dark:			#8a0000;
+  --color-blue-dark: 		#005C6D;
+  --color-blue-accent: 		#00C1CF;
+  --color-blue-light:		#c9c2c2; 
+  --color-gray-dark: 		#333333;
+  --color-gray-medium: 		#666666;
+  --color-gray-light: 		#DADADA;
+  --color-gray-superlight:	#efefef;
+  --color-silver: 			#F8F8F8;
+  --color-white: 			#FFFFFF;
+  --color-cream-light: 		#dedad6;
+  
+  --color-green-light: 		#92cc9d;
+  --color-blue-light: 		#34495ea1;
+
+  /* Cards */
+  --card-border-radius: 	6px;
+  --card-border-color: 		var(--color-blue-light);
+  --card-border-color-light:var(--color-blue-dark);
+  --card-bg-color: 			white; /*--color-silver);*/
+  --card-bg-color-light: 	var(--color-white);
+  --card-bg-top-color: 		var(--color-blue-petr-gray);
+
+ 
+ /* Typography */
+  --card-title-color: 		var(--color-white);
+  --card-title-bg: 			var(--color-blue-dark);
+  --card-text-color: 		var(--color-gray-dark);
+  --card-link-color: 		var(--color-blue-accent);
+  --card-font-family-bold:	550; 
+  --card-font-family: 		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* estrutura */
+  --padding: 				10px;
+  --margin:				10px;
+  --gap: 				10px;
+  --transition:  			0 1px 4px rgba(0,0,0,0.05); 
+
+}
+
+
+
+
+    .carousel-wrapper {
+      position: relative;
+      padding: 0 40px; /* espaço para botões */
+    }
+
+    .badge-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 16px;
+      padding: 16px;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+    }
+
+    .badge-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .badge-magazine {
+      flex: 0 0 auto;
+      width: 280px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      scroll-snap-align: start;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .badge-header {
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      padding: 12px 16px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .badge-body {
+      display: flex;
+      padding: 16px;
+      align-items: center;
+    }
+
+    .badge-image {
+      width: 80px;
+      height: 80px;
+      margin-right: 16px;
+      object-fit: contain;
+    }
+
+    .badge-info h2 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .badge-info p {
+      margin: 4px 0 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 36px;
+      height: 36px;
+      border: none;
+      border-radius: 50%;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .carousel-btn:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .carousel-btn.left {
+      left: 0;
+    }
+
+    .carousel-btn.right {
+      right: 0;
+    }
+
+
+
+
+
+
+
+
+/* ========================
+   🧱 ROOT
+   ======================== */
+html {
+  font-size: 16px;
+}
+.uc_appbg-blue-light	{
+	background-color: #8eb7908f; /*var(#8eb7908f--color-blue-light);*/
+}
+.uc_appbg-green-light	{
+	background-color:var(--color-green-light);
+}
+.uc_appborder-bottom {
+	border-bottom:1px solid var(--card-border-color); 
+	margin-top:5px;
+}
+.uc_apptext-bold {
+	font-weight: var(--card-font-family-bold);
+}
+.uc_apptext-title {
+	font-size: 1.1rem;
+}
+.uc_appcard-label{
+	font-size: 0.8rem;
+}
+.uc_appmargin-top{
+	margin-top:70px;
+}
+.uc_appmargin-bottom{
+	margin-bottom:100px;
+}
+
+.uc_appbutton {
+	background-color: white;
+    color: var(--color-blue-petroleum);
+    border: 1px solid var(--color-blue-petroleum);
+	border-radius: var(--card-border-radius);
+	margin-top:10px;
+	margin-bottom:10px;
+	padding: 5px;
+	max-width: 200px;
+}
+.uc_appbutton:hover {
+  filter: brightness(0.70) contrast(2.1);	
+}
+.uc_appbutton:active {
+  transform: scale(0.97);
+  filter: brightness(0.88) contrast(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);	
+}
+/* ========================
+   🧱 BODY
+   ======================== */
+body {	
+    font-family: var(--card-font-family); 
+	background-color: var(--color-gray-superlight);
+    color: var(--color-title);
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/* ========================
+   🧱 SINO NOTIFICAÇÕES
+   ======================== */
+.uc_appnotification-bell {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  font-family: var(--card-font-family);
+}
+
+.uc_appnotification-bell i {
+  color: var(--color-white); 
+}
+
+.uc_appnotification-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: var(--card-font-family-bold);
+  line-height: 1.3;
+  min-width: 20px;
+  text-align: center;
+}
+	
+/* ========================
+   🧱 LISTA	NOTIFICAÇÕES
+   ======================== */
+.uc_appnotification-list {
+    width: 100%;
+    background: white;
+    overflow: hidden;
+    margin-top:55px;
+}
+
+.uc_appnotification-item {
+	border: 1px solid var(--card-border-color);
+	display: flex;
+	align-items: flex-start;
+	padding: var(--padding);
+}
+
+.uc_appnotification-item-broadcast
+{
+	background-color: var(--color-red-broadcast);
+}
+
+.uc_appnotification-item:last-child {
+      /* border-bottom: none; */
+}
+
+.uc_appnotification-icon {
+	font-size: 1.0rem;
+	margin-top: 2px;
+	padding-right: var(--padding);
+}
+
+.uc_appnotification-content {
+	flex: 1;
+}
+
+.uc_appnotification-title {
+	font-weight: var(--card-font-family-bold);
+	margin: 0 0 4px 0;
+	font-size: 1.1rem;
+}
+
+.uc_appnotification-text {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.uc_appnotification-time {
+	font-size: 0.85rem;
+	margin-top: 4px;
+}
+   
+/* ========================
+   🧱 BROADCAST	
+   ======================== */
+
+	
+/* ========================
+   🧱 TOP BAR	
+   ======================== */
+.uc_apptopbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-blue-petroleum);
+  color: white;
+  z-index: 999;
+  box-shadow: var(--shadow);
+  padding: 10px 20px;
+}
+
+.uc_apptopbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.uc_apptopbar-title {
+  font-size: 1rem;
+}
+
+.uc_apptopbar-user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+}
+
+.uc_appuser-name {
+  font-size: 1rem;
+  color: var(--card-title-color);
+}
+
+.uc_appuser-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--card-border-color);
+}
+
+/* ========================
+   🧱 CABECALHO DA PAGINA
+   ======================== */
+.uc_appheader {
+  background-color: var(--color-cream-light);
+  margin: var(--margin);
+  padding: var(--padding);
+  border-radius: var(--card-border-radius);
+  margin-top:70px;
+ }
+
+.uc_appheader-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.uc_appheader-title {
+  font-size: 1.2rem;
+  font-weight: var(--card-font-family-bold);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.uc_appheader-subtitle {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: var(--card-font-family-bold);
+  color: var(--color-gray-medium);
+  max-width:80%;
+  overflow:wrap;
+}
+
+@media (max-width: 480px) {
+  .uc_appheader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+	
+/* ========================
+   🧱 BOTAO VOLTAR
+   ======================== */
+.uc_appbtvoltar {
+  background: none;
+  color: #0a84ff;
+  border: none;
+  font-size: 1.0rem;
+  font-weight: var(--card-font-family-bold);
+  padding: 8px 4px;
+  border-radius: var(--card-border-radius);
+  cursor: pointer;
+}
+
+.uc_appbtvoltar:hover {
+  filter: brightness(0.70) contrast(2.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.uc_appbtvoltar:active {
+  transform: scale(0.97);
+  filter: brightness(0.88) contrast(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+ @media (max-width: 480px) {
+   .uc_appbtvoltar {
+    width: 100%;
+   }
+}
+
+/* ========================
+   🧱 FOOTER
+   ======================== */
+.uc_appfooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-gray-dark);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--padding);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
+/* ========================
+   Footer: botao
+   ======================== */
+.uc_appfooter .uc_appfooter-button {
+  background-color: var(--color-gray-dark); 
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--card-border-radius);
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* ========================
+   Footer Interações
+   ======================== */
+
+.uc_appfooter .uc_appfooter-button:hover {
+  filter: brightness(0.70) contrast(2.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.uc_appfooter .uc_appfooter-button:active {
+  transform: scale(0.97);
+  filter: brightness(0.88) contrast(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ========================
+   Footer Responsividade
+   ======================== */
+/* Responsive padding for small screens */
+@media (max-width: 480px) {
+  .uc_appfooter {
+    flex-direction: row;
+    gap: var(--gap);
+    padding: 12px 8px 12px 0px;
+  }
+  .uc_appfooter .uc_appfooterbutton {
+    width: 100%;
+    max-width: 90%;
+  }
+}
+
+/* ========================
+   🧱 CARDSIMPLES ARRANJANDO NO ESPAÇO DA LINHA
+   ======================== */
+.uc_appcardsimples-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: var(--margin);
+  padding: var(--padding);
+  box-sizing: border-box;
+    gap: var(--gap);
+}
+
+.uc_appcardsimples {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-sizing: border-box;
+  width: 100%;
+  user-select: none;
+ /* gap: var(--gap);  */
+}
+
+.uc_appcardsimples {
+  border: 1px solid var(--card-border-color);
+  background-color: var(--color-white);
+}
+
+.uc_appcardsimples-titlecontainer {
+  background-color: var(--card-bg-top-color);
+  color: var(--card-title-color);
+  padding: var(--padding);
+  min-height: 150px;
+  line-height: 1rem;
+}  
+
+.uc_appcardsimples-content{
+  color: var(--card-text-color);
+  padding: var(--padding); 
+  font-size: 0.85rem;
+  }
+  
+  
+.uc_appcardsimples-title {
+  background-color: var(--card-bg-top-color);
+  color: var(--card-title-color);
+  padding: var(--padding);
+  font-size: 1.2rem;
+}
+
+/* iPad: 2 cards por linha */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .uc_appcardsimples {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+/* Desktop: 3 cards por linha */
+@media (min-width: 1025px) {
+  .uc_appcardsimples {
+    width: 33%;
+    max-width: 33%;
+  }
+}
+
+/* ========================
+   🧱 CARDSIMPLES ARRANJANDO NO ESPAÇO DA LINHA
+   ======================== */
+.uc_appcardsfc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: var(--margin);
+  padding: var(--padding);
+  box-sizing: border-box;
+}
+
+.uc_appcardsf {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-sizing: border-box;
+  width: 100%;
+  user-select: none;
+  padding: var(--padding);
+  min-height: 60px;
+  justify-content: center;
+}
+
+.uc_appcardsf{
+  border: 1px solid var(--card-border-color);
+}
+
+.uc_appcardsf-title {
+  background-color: var(--card-bg-top-color);
+  color: var(--card-title-color);
+  padding: var(--padding);
+  font-size: 1.2rem;
+}
+
+/* ========================
+   🧱 CARD
+   ======================== */
+.uc_appcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: var(--margin);
+  padding: var(--padding);
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* ========================
+   Card Base
+   ======================== */
+.uc_appcard,
+.uc_appcardlarge,
+.uc_appcardlight {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  transition: var(--transition);
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  user-select: none;
+  margin: 5px;
+  /*gap: var(--gap); */
+}
+
+/* Card Escuro (default) */
+.uc_appcard, .uc_appcardlarge {
+  border: 1px solid var(--card-border-color);
+  background-color: var(--card-bg-color);
+}
+
+/* Card Claro */
+.uc_appcardlight {
+  border: 1px solid var(--card-border-color-light);
+  background-color: var(--card-bg-color-light);
+}
+
+/* ========================
+   Card Estrutura Interna
+   ======================== */
+.uc_appcard .uc_appcard-titlecontainer,
+.uc_appcardlight .uc_appcard-titlecontainer,
+.uc_appcardlarge .uc_appcard-titlecontainer {
+  background-color: var(--card-bg-top-color);
+  color: var(--card-title-color);
+  padding: var(--padding);
+  min-height: 150px;
+  font-size: 0.85rem;
+}
+
+.uc_appcard .uc_appcard-simpletitle {
+  background-color: var(--card-bg-top-color);
+  color: var(--card-title-color);
+  padding: var(--padding);
+  font-size: 0.85rem;
+}
+
+.uc_appcard .uc_appcard-title,
+.uc_appcardlight .uc_appcard-title,
+.uc_appcardlarge .uc_appcard-title{
+  font-weight: var(--card-font-family-bold); 
+  font-size: 1.0rem;  
+  font-family: var(--app-font); 
+}
+
+.uc_appcard .uc_appcard-content,
+.uc_appcardlight .uc_appcard-content, 
+.uc_appcardlarge .uc_appcard-content{
+  color: var(--card-text-color);
+  padding: var(--padding); 
+  font-size: 0.85rem;
+}
+
+/* Links dentro do conteúdo */
+.uc_appcard-content a {
+  color: var(--card-link-color);
+  text-decoration: none;
+}
+
+.uc_appcard-content a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Card Interações
+   ======================== */
+
+.uc_appcard:hover,
+.uc_appcardlight:hover hover {
+  filter: brightness(0.70) contrast(2.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.uc_appcard:active,
+.uc_appcardlight:active {
+  transform: scale(0.97);
+  filter: brightness(0.88) contrast(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ========================
+   Card Responsividade
+   ======================== */
+
+/* iPad: 2 cards por linha */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .uc_appcard,
+  .uc_appcardlight {
+    width: calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+}
+
+/* Desktop: 3 cards por linha */
+@media (min-width: 1025px) {
+  .uc_appcard,
+  .uc_appcardlight {
+    width: calc(33.333% - 16px);
+    max-width: calc(33.333% - 16px);
+  }
+}
+
+/* ========================
+   GRID MENU
+   ======================== */
+
+.uc_appgrid-menu {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+ gap: var(--gap);
+ padding: var(--padding);
+ background-color: #f3f3f3;
+}
+
+.uc_appgrid-item {
+  background-color: var(--color-blue-petroleum);
+  border-radius: var(--card-border-radius);
+  border: 1px solid var(--card-border-color);
+  text-align: center;
+  padding: var(--padding); /*20px 10px;*/
+  font-family: var(--card-font-family);
+  color: var(--card-bg-color-light);
+  transition: var(--transition);
+  cursor: pointer;
+  max-width:200px;
+}
+
+.uc_appgrid-item:hover {
+  filter: brightness(0.70) contrast(2.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.uc_appgrid-item:active {
+  transform: scale(0.97);
+  filter: brightness(0.88) contrast(1.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.uc_appgrid-item .uc_appgrid-icon {
+  font-size: 1.0rem;
+  margin-bottom: 8px;
+  display: block;
+}
+/* ========================
+   INFO CARD MEU CURSO
+   ======================== */
+
+.uc_appinfo-card {
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--card-border-radius);
+  padding: var(--padding);
+  margin: var(--margin);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  font-family: var(--card-font-family);
+  font-size: 1rem;
+  word-wrap: break-word; /* Quebra longas palavras */
+  overflow-wrap: break-word;
+  white-space: normal;
+   background-color: var(--color-white);
+}
+.uc_appinfo-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+.uc_appinfo-title {
+  font-weight: var(--font-bold);
+  font-size: 1.0rem;
+}
+.uc_appinfo-sub {
+  font-size: 0.85rem;
+  font-weight: var(--card-font-family-bold);
+  min-width: 80px;
+}
+.uc_appinfo-status {
+  font-weight: var(--card-font-family-bold);
+  padding: 2px 6px;
+  border-radius: var(--card-border-radius);
+  margin-left: 4px;
+}
+.uc_appinfo-status.em-curso {
+}
+.uc_appinfo-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  width:100%;
+}
+.uc_appinfo-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin-right: 4px;
+}
+.uc_appinfo-footer {
+  border-top: 1px solid var(--card-border-color);
+  padding-top: var(--padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* ipad */
+@media (max-width: 480px){
+	.uc_appinfo-group {
+	   width:100%;
+	}
+}
+
+/* ipad */
+@media (min-width: 481px) and (max-width: 1023px)){
+	.uc_appinfo-group {
+	   width:100%;
+	}
+}
+
+
+/* desktop */
+@media (min-width: 1024px) {
+	.uc_appinfo-group {
+	   width:30%;
+	}
+}
+
+/* ------------------------------
+   CAPITULOS 
+   ------------------------------*/
+.uc_appsection {
+  padding: var(--padding);
+  background-color: inherit;
+  border-radius: var(--card-border-radius);
+}
+
+.uc_appsection-title {
+  font-size: 1.1rem;
+  color: var(--color-title);
+}
+
+.uc_appsection-description {
+  font-size: 0.95rem;
+  color: var(--color-title);
+}
+
+	
+/* ========================
+   CREDENCIAL ? CARTEIRINHA
+   ======================== */
+.uc_appcred {
+ width: 320px;
+ height: 75vh;
+ background-color: white;
+ border-radius: 20px;
+ overflow: hidden;
+ position: relative;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+.uc_appcred-topocirc {
+ position: absolute;
+ top: -680px;
+ left: -70px;
+ width: 1000px;
+ height: 1000px;
+ background-color: #5f6f7f8c;
+ border-radius: 50%;
+ z-index: 0;
+}
+.uc_appcred-logo {
+ z-index: 1;
+ text-align: center;
+ margin-top:30px;
+}
+.uc_appcred-logo img {
+ height: 60px;
+ width: auto;
+}
+.uc_appcred-section {
+ z-index:3;
+ width:320px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;	 
+ text-align:center;	  
+}
+.uc_appcred-section section{
+ border-radius:10px;
+ background-color:white;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ width:85%;
+ padding:10px;
+}
+.uc_appcred-sectionfront {
+ width:85%;
+ padding:10px;
+}
+.uc_appcred-sectionback {
+ z-index:3;
+ width:320px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  align-items: center;
+}
+.uc_appcred-sectionback section{
+ border-radius:10px;
+ background-color:white;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+ width:85%;
+ padding:10px;
+}
+.uc_appcred-foto {
+ width: 100px; 
+ height: 100px;
+}
+.uc_appcred-nome {
+ font-size: 1.2rem;
+ font-weight: 600;
+ padding-top:10px;
+ padding-left:10px;
+ padding-right:10px;
+}
+.uc_appcred-label{
+ text-align:right; 
+ padding-right:10px; 
+ font-size: 0.8rem;		
+}	
+.uc_appcred-qrcode img{
+ width: 100px;
+ height: 100px;
+ margin-bottom:10px;
+} 
+.uc_appcred-gov {
+ height: 60px;
+ width: auto;
+}  
+.uc_appcred-bottom {
+ position: bottom;
+ bottom: 0;
+ left: 0;
+ margin-top: -10;
+ width: 100%;
+}
+.uc_appcred-faixa1 {
+ height: 30px;
+ background-color: #8B0000;
+}
+.uc_appcred-faixa2 {
+ height: 5px;
+ background-color: #FF4C4C;
+}
+.uc_appcred-row{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ height: 28px;
+ align-items: center;
+  line-height: 1rem;
+}
+	
+/* ========================
+   CARTEIRINHA
+   ======================== */
+.uc_appcarteira {
+  width: 240px;
+  height: 380px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.uc_appcarteira-frente {
+  background: #b20000;
+}
+
+.uc_appcarteira-verso {
+  background: #1b1f3b;
+}
+
+.uc_appcarteira-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.uc_appcarteira-photo img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.uc_appcarteira-info, .uc_appcarteira-extra-info {
+  font-size: 13px;
+  padding: 0 16px;
+  flex-grow: 1;
+  background-color: white;
+  color:black;
+}
+
+.uc_appcarteira-info p, .uc_appcarteira-extra-info p {
+  margin: 6px 0;
+  line-height: 1.3;
+}
+
+.uc_appcarteira-qrcode {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  color:black;
+}
+
+.uc_appcarteira-qrcode img {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+.uc_appcarteira-logo {
+	width:100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.1);
+  display:flex;
+  font-size: 0.85rem;
+  
+}
+
+/* .uc_appcarteira-logo img { */
+  /* width: 60px; */
+  /* height: auto; */
+/* } */
+
+.uc_appcarteira-footer {
+  font-size: 10px;
+  text-align: center;
+  padding: 8px 10px;
+  color: #ccc;
+}

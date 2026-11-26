@@ -1,0 +1,83 @@
+	.uc_appl-dropdown{
+      position: relative;
+      display: inline-block;
+    }
+
+
+    .uc_appl-dropdown-button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+background-color:red;
+    }
+
+    .uc_appl-dropdown-button:hover {
+      background-color: red; /* rgba(255,255,255,0.1);*/
+    }
+
+    .uc_appl-grid-icon {
+      width: 24px;
+      height: 24px;
+      fill: white;
+    }
+
+    .uc_appl-dropdown-content-wrapper {
+      position: absolute;
+      top: 110%;
+      right: 0;
+      z-index: 1000;
+    }
+
+    .uc_appl-dropdown-content {
+      background-color: white;
+      width: 280px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      padding: 16px;
+      display: none;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .uc_appl-dropdown-content.show {
+      display: flex;
+    }
+
+    .uc_appl-app-item {
+      width: 25%;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .uc_appl-app-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background-color: #f2f2f2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 6px;
+      transition: background-color 0.2s ease;
+    }
+
+    .uc_appl-app-icon:hover {
+      background-color: #e0e0e0;
+    }
+
+    .uc_appl-app-icon img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .uc_appl-app-label {
+      font-size: 12px;
+      color: #333;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }

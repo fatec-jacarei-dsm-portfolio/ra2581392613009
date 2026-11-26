@@ -1,0 +1,45 @@
+
+/* menu horizontal */    
+.uc_menu-h          {display:flex; flex-direction:row; align-items:center;}
+.uc_menu-hl         {justify-content: left; }
+.uc_menu-hc         {justify-content: center;}
+.uc_menu-hr         {justify-content: right;}
+.uc_menu-h ul 		{display:flex;}
+.uc_menu-h ul li 	{list-style:none;}
+
+/* menu vertical */
+.uc_menu-v          {display:flex; flex-direction:column; align-items:start; }
+.uc_menu-vl         {align-items:start; }
+.uc_menu-vc         {align-items: center;}
+.uc_menu-vr         {align-items: end;}
+.uc_menu-v ul 		{display:flex; flex-direction:column; gap:5px}
+.uc_menu-v ul li 	{list-style:none;}
+
+/* itens do menu */
+.uc_menu-icone      {font-size: 1.4em;}
+.uc_menu-item       {display:flex; flex-direction:column; justify-content:center; text-align:center;  
+    align-items:center; 
+    min-width:5em; padding:5px;}
+.uc_menu-texto      {font-size: 0.8em;}
+
+.uc_menu-item:hover {box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);}
+.uc_menu-item:hover div .uc_menu-icone {color: var(--uc_bs-alink); }
+.uc_menu-item:hover div .uc_menu-texto  {color: var(--uc_bs-alink); }
+.uc_menu-item:active {background-color:var( --uc_bs-alink); color:white;}
+.uc_menu-item:active div .uc_menu-texto {color:white;}
+
+.uc_menu-v-mp     {background-color: inherit; border-right: 1px solid var(--uc_bs-border);   height:100vh;}
+
+
+/* - CODIGO OBSOLETO (MENU) ------------------------------------------------------------------------- */
+.uc_menu 							{position:relative; display:flex; justify-content:start; align-items:center;}
+.uc_menu ul 						{display:flex;}
+.uc_menu ul li 					{position:relative; list-style:none; z-index:1;}
+.uc_menu ul li div 					{position:relative; display:flex; justify-content:center; align-items:center; flex-direction:column; width:100%; text-align:center; font-weight:480; padding-right:10px; padding-left:10px;}
+.uc_menu ul li div .uc_menuicone 		{position:relative; line-height:40px; font-size:1.5em; text-align:center;}
+.uc_menu ul li:hover div 			{border:1px solid var(--uc_bs-border); border-radius:5px;}
+.uc_menu ul li:hover div .uc_menuicone 	{font-size:1.7em; transition:0.1s; }
+/* ------------ MENU ------------------------------------------------------------------------------ */
+
+.uc_menu-nav {background-color: var(--uc_bs-menu); }
+

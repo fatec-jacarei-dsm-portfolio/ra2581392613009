@@ -1,0 +1,75 @@
+
+
+.nav {
+ padding-left:0px;
+}
+
+.nav-tabs {
+ border-bottom: 1px solid var(--uc_bs-border)  !important;
+}
+
+ul {
+ display: block;
+ list-style-type: disc;
+ margin-block-start: 0px !important;
+ margin-block-end: 0px !important;
+ padding-inline-start: 0px !important;
+ unicode-bidi: isolate;
+}
+
+div.Tab UL.nav-tabs LI A, div.Tab UL.nav-tabs LI {
+ text-decoration: none;
+ color: var(--colors_surface-negative);
+ padding:0px;
+}
+
+/* componente tab do genexus */
+div.Tab UL.nav-tabs LI.active A {   
+
+    font-family: var(--uc_texto-font);
+    font-weight: var(--cps-font-weight-normal);
+    font-size: var(--uc_texto-size);
+
+    color: var(--uc_bs-alink) !important;
+
+    text-decoration: none;
+    background-color: white;
+    border-top: 1px solid var(--uc_bs-border);
+    border-left: 1px solid var(--uc_bs-border);
+    border-right: 1px solid var(--uc_bs-border);
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* corrige o espaço entre as tabs */
+.gx-basic-tab .nav-tabs > li {
+    margin: 0 0px !important;
+}
+
+div.Tab UL.nav-tabs LI A {
+	/* background-color:#f9f8fe; */
+	
+ 	position:relative;
+	top:1px;
+	font-family: var(--uc_texto-font);
+    font-weight: var(--cps-font-weight-normal);
+    font-size: var(--uc_texto-size);
+    color: var(--uc_bs-alink) !important;
+    text-decoration: none;
+   
+    border-top: 1px solid var(--uc_bs-border);
+    border-left: 1px solid var(--uc_bs-border);
+    border-right: 1px solid var(--uc_bs-border);
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+
+

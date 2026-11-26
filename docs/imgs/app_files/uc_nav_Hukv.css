@@ -1,0 +1,102 @@
+
+.uc_nav		{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;  
+  width: 100%; 
+  height: 60px; 
+  overflow: hidden;
+}
+
+.uc_nav_fixedtop{position: fixed; top: 0; z-index: 100;}
+
+.uc_navgray	  {color: var(--uc_bs-navbar); background-color: var(--uc_bs-gray);	    border-bottom: 1px solid var(--uc_bs-border);}
+.uc_navblack  {color: var(--uc_bs-navbar); background-color: black;	             border-bottom: 1px solid var(--uc_bs-border);}
+.uc_navwhite	{color: var(--uc_bs-texto);  background-color: var(--uc_bs-navbar);   border-bottom: 1px solid var(--uc_bs-border);}
+
+.uc_navregular	{
+    color: var(--uc_nav_color);
+    background-color: var(--uc_bs-navbar);
+    border-bottom: 1px solid var(--uc_bs-border);
+}
+.uc_nav_brand	{font-size:var(--uc_texto_xsm);}
+.uc_nav_logo	{display: flex; flex-direction: row; font-size: 14px;  vertical-align:center;}
+.uc_nav_item	{display:flex; flex-direction:row; padding-left:10px; text-decoration:none;}
+.uc_nav_r-item	{display:flex; flex-direction:row; text-decoration:none; align-items: center;}
+.uc_nav_content{display: inline-block;  cursor: pointer; text-decoration: none; align-self: center; text-align: center; padding-left: 10px; padding-right:10px; padding-top: 5px; padding-bottom: 5px; font-family: var(--uc_bt-texto-font); font-size: var(--uc_bt-texto-size); color: var(--uc_blueoutline-color); transition: background-color .1s ease; box-sizing: border-box;}
+.uc_nav_alerta	{padding:2px; width:20px; height:20px; border-radius:10px; color:white; font-size: 11px; background-color:red; text-align:center; position:relative; top:-7px; left:-3px;}
+.uc_nav_left	{display:flex; flex-direction:row; align-items:center; width: 20%;}
+.uc_nav_center	{display:flex; flex-direction:row; padding-left:30px; align-items:center; width: 100%;list-style: none;}
+.uc_nav_right	{display:flex; flex-direction:row; justify-content:flex-end; align-items:center; width: 40%;}
+.uc_footerinside  {position: fixed !important;left: 0 !important;bottom: 0 !important;width: 100%;background-color: #cccccc42 !important;}
+
+.uc_nav_botao {
+ border-radius: var(--uc_button-border-radius) !important;
+ background-color: inherit; 
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 6px;
+ padding-bottom: 6px;
+}
+.uc_nav_botao-link{ color: var(--uc_bs-alink) !important;}
+
+.uc_nav_botao:hover {
+ box-shadow: var(--uc_control-shadow) !important;
+ border: var(--uc_border-acolor) !important;
+ color: var(--uc_bs-ahover);
+ border-width:2px;
+}
+.uc_nav_botao:active {
+ color:var(--uc_bs-aactive); 
+}
+
+.uc_navheader {
+ display: flex; 
+ flex-direction: row; 
+ justify-content: space-between; 
+ width: 100%; 
+ height: 60px; 
+ z-index: 1001;  
+ overflow: hidden;  
+ border-bottom: 1px solid var(--uc_bs-border);  
+ padding: 10px; 
+}
+
+.uc_footer  {
+  position: fixed !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  width: 100%;
+  background-color: white !important;
+}
+
+/* hamburger */
+.uc_nav_hamburger{display: none; }
+.uc_nav-hambar   {display: block; width: 20px; height: 3px; margin-bottom: 5px; background-color: var(--uc_bs-texto); transition: all 0.3s ease-in-out;}
+
+/* controle de redução da interface */
+@media (max-width:600px) {
+  .uc_nav_logo        {display: none;}
+  .uc_nav_brand       {display: none;}
+  .uc_nav_hidden      {display: none;}
+  .uc_nav_item	      {padding-left:0px; padding-top:5px; padding-bottom:5px; text-decoration:none; color:var(--uc_bs-texto);}
+  .uc_nav_botao       {padding-left: 2px; padding-right: 2px; padding-top: 6px; padding-bottom: 6px;}
+  .uc_nav_botao:hover {box-shadow: var(--uc_control-shadow) !important; color: var(--uc_bs-ahover);}
+  .uc_nav_hamburger   {display: block; padding-left:10px;  cursor: pointer;}
+  .uc_nav_center      {
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        flex-direction: column;
+        align-items: center;;
+        color: var(--uc_nav_color); 
+        background-color: var(--uc_bs-navbar); 
+        border-bottom: 1px solid var(--uc_bs-border);
+        border-right: 1px solid var(--uc_bs-border);
+        width: 180px;
+        transition: 0.3s;
+        padding-left: 0px;
+    }
+    .uc_nav_center.active {left: 0;}
+}
+

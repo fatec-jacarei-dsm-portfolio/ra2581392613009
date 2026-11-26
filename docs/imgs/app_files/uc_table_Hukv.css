@@ -1,0 +1,75 @@
+div.minimalistBlack {
+  border: 1px solid var(--uc_bs-border);
+  background-color: var(--uc_bs-white);
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.divTable.minimalistBlack .divTableCell, .divTable.minimalistBlack .divTableHead {
+  border-bottom: 1px solid var(--uc_bs-border);
+  padding: 10px;
+}
+.divTable.minimalistBlack .divTableBody .divTableCell {
+  font-size: var(--uc_texto-size);
+  color: var(--uc_bs-texto);
+}
+.divTable.minimalistBlack .divTableHeading {
+  background: var(--uc_bs-navbar);
+  border-bottom: 1px solid var(--uc_bs-border);
+}
+.divTable.minimalistBlack .divTableHeading .divTableHead {
+  font-size: var(--uc_texto-tb-header);
+  color: var(--uc_bs-texto);
+  text-align: left;
+}
+.minimalistBlack .tableFootStyle {
+  font-size: var(--uc_texto-tb-header);
+  color: var(--uc_bs-texto);
+  border-top: 2px solid var(--uc_bs-border);
+}
+.minimalistBlack .tableFootStyle {
+  font-size: var(--uc_texto-size);
+}
+
+/* -------------------------------------------------------- */
+div.minimalistGRAY {
+  border: 1px solid var(--uc_bs-border);
+  background-color: var(--uc_bs-white);
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+.divTable.minimalistGRAY .divTableCell, .divTable.minimalistGRAY .divTableHead {
+  border-bottom: 1px solid var(--uc_bs-border);
+  padding: 10px;
+}
+.divTable.minimalistGRAY .divTableBody .divTableCell {
+  font-size: var(--uc_texto-size);
+  color: var(--uc_bs-texto);
+}
+.divTable.minimalistGRAY .divTableHeading {
+  background: var(--uc_bs-gray);
+  border-bottom: 1px solid var(--uc_bs-border);
+}
+.divTable.minimalistGRAY .divTableHeading .divTableHead {
+  font-size: var(--uc_texto-tb-header);
+  color: var(--uc_bs-texto);
+  text-align: left;
+}
+.minimalistGRAY .tableFootStyle {
+  font-size: var(--uc_texto-tb-header);
+  color: var(--uc_bs-texto);
+  border-top: 2px solid var(--uc_bs-border);
+}
+.minimalistGRAY .tableFootStyle {
+  font-size: var(--uc_texto-size);
+}
+
+/* -------------------------------------------------------- */
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}

@@ -1,0 +1,16 @@
+
+/* ------------ DROPDOWN ------------------------------------ */
+/* .dropdown-toggle::after  {display:none !important;}  */
+/* .dropdown-toggle{background-color: inherit;font-weight: 550;} */
+/* .dropdown-toggle:hover{} */
+
+.dropdown-menu>ul>li>span { color: red; }
+.dropdown-toggle {
+ color: var(--uc_bs-alink) !important;
+}
+
+.dropdown-item {
+ color: var(--uc_bs-alink) !important;
+}
+
+/* ------------ DROPDOWN ------------------------------------ */

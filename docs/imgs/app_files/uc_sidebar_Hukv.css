@@ -1,0 +1,77 @@
+
+
+/* https://www.geeksforgeeks.org/how-to-expand-sidebar-on-hover-in-css/ */	
+
+.uc_sidebar {
+ display: flex; 
+ flex-direction:column; 
+ transition: width 0.3s ease;
+ list-style: none; 
+ margin-bottom: 0; 
+ height:550vh; 
+ min-width: 50px; 
+ font-family: var(--uc_bt-texto-font); 
+ font-size: var(--uc_bt-texto-size); 
+ color: var(--uc_blueoutline-color);  
+}
+
+.uc_sidebargray {
+ background-color: var(--uc_bs-gray); 
+ border-right: 1px solid var(--uc_bs-border);
+}
+
+.uc_sidebarwhite{
+ background-color: var(--uc_bs-sidebar); 
+ border-right: 1px solid var(--uc_bs-border); 
+}
+
+.uc_sidebar:hover {
+ min-width: 250px; 
+}
+
+.uc_sidebar ul {
+ list-style-type: none;
+ padding: 0;
+ margin-left:5px;
+}
+
+.uc_sidebar ul li {
+ padding-right: 10px;
+ padding-left: 10px;
+ padding-bottom: 5px;
+ white-space: nowrap;
+}
+
+.uc_sidebar ul li a {
+ color: #fff;
+ text-decoration: none;
+}
+
+.uc_sidebar ul li span {
+ display: none;
+}
+
+.uc_sidebar:hover ul li span {
+ display: inline-block;
+}
+
+.uc_sidebar ul li:hover {
+ cursor: pointer; 
+ transition: background-color .1s ease;
+}
+				
+.uc_mlitemtitle {
+ padding-top: 18px;
+ width: 100%;
+}
+
+.uc_mltitle {
+ text-transform: uppercase;
+ font-size: 10px;
+ font-weight: 700;
+ font-family: inherit;
+ line-height: 1.29 !important;
+ color: inherit;
+}
+
+

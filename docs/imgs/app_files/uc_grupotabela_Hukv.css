@@ -1,0 +1,62 @@
+
+    .uc_matriz-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .uc_matrizw100 {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .uc_matriz-semestre {
+      background: #c7c7c7; 
+      color: var(--uc_bs-texto);
+      padding: 10px;
+      /* border-radius: 8px 8px 0 0; */
+    }
+
+    .uc_matriz-tabela {
+      background-color: white;
+      /* box-shadow: 0 2px 6px rgba(0,0,0,0.1); */
+      border: 1px solid var(--uc_bs-border);
+	   margin-bottom: 20px;
+      /* border-radius: 0 0 8px 8px; */
+      overflow: hidden;
+    }
+
+    .uc_matriz-row,
+    .uc_matriz-header {
+      display: flex;
+      border-bottom: 1px solid var(--uc_bs-border);
+    }
+	
+	.uc_matriz-row:last-child {
+		border-bottom: none;
+	}	
+
+    .uc_matriz-header {
+      background: var(--uc_control-background);
+      color: #333;
+    }
+
+    .uc_matriz-cell {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .uc_matriz-cell:last-child {
+      justify-content: flex-end;
+    }
+
+    .uc_matriz-button {
+      padding: 6px 12px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .uc_matriz-button:hover {
+      background-color: #0056b3;
+    }

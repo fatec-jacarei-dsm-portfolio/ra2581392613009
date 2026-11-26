@@ -1,0 +1,24 @@
+/* ------------ FLEX LAYOUT --------------------------------- */
+.uc_flex-row 					{display:flex; flex-direction:row;}
+.uc_flex-column 				{display:flex; flex-direction:column;}
+.uc_flex-wrap 					{flex-wrap:wrap;}
+.uc_flex-content-space-between 	{justify-content:space-between;}
+.uc_flex-justifycontentcenter	{justify-content:center;}
+.uc_flex-justifycontentend	 	{justify-content:flex-end;}
+.uc_flex-align-items-center		{align-items:center;}
+
+
+/* nomes simplificados */
+.uc_flex-r						{display:flex; flex-direction:row;}
+.uc_flex-c						{display:flex; flex-direction:column;}
+.uc_flex-w						{flex-wrap:wrap;}
+.uc_flex-nw 					{flex-wrap:nowrap;}
+.uc_flex-jcs 					{justify-content:flex-start; align-items: flex-start;}
+.uc_flex-jcsb 					{justify-content:space-between;}
+.uc_flex-jcc					{justify-content:center;}
+.uc_flex-jce	 				{justify-content:flex-end;}
+.uc_flex-aic					{align-items:center;}
+
+.uc_flex-eq                     {flex: 1;}
+.uc_flex-db                     {flex: 2;}
+/* ------------ FLEX LAYOUT --------------------------------- */

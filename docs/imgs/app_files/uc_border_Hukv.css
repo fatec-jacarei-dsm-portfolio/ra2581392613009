@@ -1,0 +1,21 @@
+.uc_borderselected{ border: 1px solid red;}
+
+.uc_borderred {border: 1px solid red;}
+.uc_borderblue {border: 1px solid blue;}
+.uc_borderviolet {border: 1px solid blueviolet;}
+
+.uc_bgcolorgray {background-color: #dee2e6;}
+.uc_bgcolorred {background-color: #fb947e;}
+.uc_bgcolorblue {background-color: #7ee7fb;}
+.uc_bgcolorgreen {background-color: #7efbb8;}
+
+.uc_border        { border: var(--uc_border);}
+.uc_borderradius-bottom {border-bottom-left-radius: var(--uc_border-radius); border-bottom-right-radius: var(--uc_border-radius);} 
+.uc_borderradius-top    {border-top-left-radius: var(--uc_border-radius); border-top-right-radius: var(--uc_border-radius);}
+
+/* bordas padrões */
+.uc_border-bottom {border-bottom: var(--uc_border);}
+.uc_border-top {border-top: var(--uc_border);}
+.uc_border-left {border-left: var(--uc_border);}
+.uc_border-right {border-right: var(--uc_border);}
+.uc_border {border: var(--uc_border);}

@@ -1,0 +1,91 @@
+.uc_appmenu-container-row {
+ display: flex;
+ margin-left:auto;
+ margin-right:auto;
+ width:90%;
+}
+
+.uc_appmenu-container {
+ display: flex;
+ flex-direction: row;
+ flex-wrap:wrap;
+ gap: 10px;
+
+}
+
+.uc_appmenu-item {
+ background-color: var(--uc_control-background);
+ padding: 10px;
+ width: 300px;
+ border-radius:var(--uc_border-radius);
+ border: 1px solid var(--uc_bs-border);
+ text-align: center;
+ font-family: var(--uc_texto-font);
+ box-shadow: var(--uc_control-shadow);
+ box-sizing: border-box;
+ overflow: hidden;
+ display:flex;
+}
+
+.uc_appmenu-icon {
+ width: 48px;
+ height: 48px;
+ padding:10px;
+ font-size: 28px;
+ border-radius: 14px;
+ background: var(--uc_bs-alink);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ flex-shrink: 0;
+}
+.uc_appmenu-icon-clear {
+ width: 48px;
+ height: 48px;
+ padding:10px;
+ font-size: 28px;
+ border-radius: 14px;
+ background: inherit;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ flex-shrink: 0;
+}
+
+.uc_appmenu-info{
+ width: 100%;
+ text-align: left;
+ padding-left: 10px;
+}
+
+.uc_appmenu-title {
+ font-size: var(--uc_texto-size);
+ font-weight:var(--uc_texto-bold);
+ color: var(--uc_bs-texto);
+}
+
+.uc_appmenu-label {
+ font-size: 12px;
+ color: var(--uc_bs-texto);
+}
+
+ .uc_appmenu-item:hover {
+ background-color: #eaeaea;
+ cursor: pointer;
+}
+
+.uc_bt-icon{
+ width:30px;
+ height:30px;
+ border-radius: 15px;
+ border: 1px solid #0078d7;
+ background: white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ color: #fff;
+ flex-shrink: 0;
+ font-size: 12px;
+}

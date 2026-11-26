@@ -1,0 +1,19 @@
+
+.uc_scroll-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 1px solid #aaa;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .uc_scroll-left {
+      left: 0;
+    }
+
+    .uc_scroll-right {
+      right: 0;
+    }

@@ -1,0 +1,68 @@
+
+  .uc_appsidebar-container {
+      position: fixed;
+      left: -160px; /* Inicialmente fora da tela */
+      top: 60px;
+      width: 160px;
+      height: 100%;
+      background-color: white;
+      transition: left 0.3s ease; /* Animação para a transição */
+	z-index:1;
+border-right: 1px solid var(--uc_nav-border-color);
+    }
+
+    .uc_appsidebar-container:hover {
+       left: 0;
+    }
+
+
+  .uc_appsidebar-indicator{
+      position: absolute;
+      right: -35px; /* Posiciona à direita do sidebar */
+      top: 85%;
+      transform: translateY(-50%);
+      background-color: #0078d7;
+      color: white;
+      font-size: 14px;
+      padding: 10px;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      cursor: pointer;
+      display: block; /* Inicialmente visível */
+      transition: right 0.3s ease;
+
+  }
+
+.uc_appsidebar-item {
+      background-color:#0078d7; 
+      width: 100px;
+	margin-left:auto;
+	margin-right:auto;
+margin-bottom:2px;
+      border: 1px solid #0078d7;
+      position: relative;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      padding: 10px;
+border-radius:6px;
+color: white;
+      box-sizing: border-box;
+    }
+
+    .uc_appsidebar-icon {
+      font-size: 14px;
+    }
+
+    .uc_appsidebar-label {
+      font-size: 11px;
+    }
+
+    .uc_appsidebar-item:hover {
+background-color:white;
+    color: var(--uc_bs-texto) !important;
+font-weight:550;
+border-width:2px;
+box-shadow: var(--uc_control-shadow) !important;
+      cursor: pointer;
+    }

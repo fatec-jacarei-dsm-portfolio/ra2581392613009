@@ -1,0 +1,107 @@
+.bodylogin {
+display: flex;
+-webkit-box-flex: 1;
+flex-grow: 1;
+flex-direction: column;
+min-height: 100vh;
+}
+
+body {
+margin: 0px; 
+padding: 0px; 
+color:var(--uc_bs-texto) !important; 
+font-family: var(--uc_texto-font) !important; 
+font-size: var(--uc_texto-size) !important; 
+background-color: var(--uc_body-background) !important;
+} 
+
+.ErrorMessages{ 
+display:block; 
+position: relative!important; 
+top: 30px; 
+left: -300px; 
+width:300px; 
+z-index:10; 
+color: red; 
+font-weight: 550;
+}
+
+.container-fluid {
+padding-right: 0px !important; 
+padding-left: 0px !important; 
+margin-right: auto;
+margin-left: auto;
+}
+ 
+.container {
+padding-right: 0px !important; 
+padding-left: 0px !important; 
+margin-right: auto;
+margin-left: auto; 
+margin-top:60px;
+}
+
+.bg-picture {
+background-image: url(../style/background_cps.jpg);
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.ErrorViewer   {
+color: red !important;
+}
+
+.gx-warning-message {
+color: red !important;
+}
+
+.gx-label 					
+{
+font-weight: 0 !important; 
+font-size: var(--uc_texto_xsm);  
+font-weight:600;
+}
+
+.dp_container .Attribute + span .btn img {
+content: url("calendar_ico.svg");
+}
+
+.Calendar {
+z-index: 6000 !important;
+}
+
+.uc_group {
+border: 1px solid #ced4da !important;
+display: block;
+padding: 10px;
+margin-bottom:10px; 
+}
+
+.uc_grouptitle {
+display: block;
+unicode-bidi: isolate;
+padding-inline: 2px;
+}
+
+/* classe de junção da imagem do Calendar na mesma linha do atributo */
+.input-group {
+display:flex;
+gap:5px;
+}
+
+/* remove posição do botao de prompt */
+.gx-image-link.btn.btn-default {
+padding-top: 0px;
+}
+
+.row{
+padding-left: 0px !important;
+padding-right: 0px !important;
+margin-top: 0px !important;
+margin-right: 0px !important;
+margin-left: 0px !important;
+}
+
+.gx-content-placeholder {width:100%;}

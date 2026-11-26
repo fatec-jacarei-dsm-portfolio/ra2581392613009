@@ -1,0 +1,65 @@
+    .uc_relatorio {
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .uc_relatorio h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .uc_relatorio-campo {
+      margin-bottom: 15px;
+    }
+
+    .uc_relatorio-campo label {
+      display: block;
+      font-weight: bold;
+      color: #444;
+      margin-bottom: 5px;
+    }
+
+    .uc_relatorio-campo .valor {
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .uc_relatorio-sentimento {
+      font-weight: bold;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+
+    .uc_relatorio-sentimento.ruim {
+      background-color: #e74c3c;
+    }
+
+    .uc_relatorio-sentimento.ok {
+      background-color: #f39c12;
+    }
+
+    .uc_relatorio-sentimento.bom {
+      background-color: #2ecc71;
+    }
+
+    .uc_relatorio-satisfacao-barra {
+      background: #e0e0e0;
+      border-radius: 20px;
+      height: 20px;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .uc_relatorio-satisfacao-preenchida {
+      height: 100%;
+      background-color: #3498db;
+      width: 80%; /* ajuste aqui para representar a porcentagem da satisfação */
+    }

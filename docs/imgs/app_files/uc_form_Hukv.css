@@ -1,0 +1,98 @@
+
+.form_guid {color: lightgray !important;}
+
+.form-horizontal{ 
+margin-top:0px; 
+margin-left: 0px; 
+margin-right: 0px;
+}
+
+.form-container {
+background-color: inherit; 
+padding: 30px; 
+}
+
+.form-group {
+   margin-top:10px;
+}
+.gx-form-group {
+   margin-top:10px;
+}
+
+.form__actions--fixed{
+margin-left:30px;	
+}
+
+.atributoescondido {
+color: white !important; 
+background-color: white !important;
+}
+
+p.form-control-static > .atributoescondido {
+color: white !important; 
+background-color: white !important;
+}
+
+
+.gx-form-item {
+padding-right: 3px;
+padding-left: 0px;
+}
+
+.form-control {
+display: block; 
+background-clip: padding-box;
+appearance: none;
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+border: var(--uc_border) !important; /*ced4da;*/
+border-left-style: hidden;
+border-top-style: hidden;
+border-right-style: hidden;
+/*border-radius:var(--uc_border-radius) !important;  border-radius: .375rem;*/
+color: var(--uc_bs-texto);
+background-color: var(--uc_control-background) !important;
+background-clip: padding-box;
+width: 100%;
+padding: .375rem .75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;  
+-webkit-appearance: none;
+-moz-appearance: none;
+}
+
+.form__actions--fixed{
+margin-top:30px !important;
+width: 100%;
+max-width: 100%;
+padding-right: calc(var(--bs-gutter-x) * .5);
+padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+.uc_form-white{
+background-color:white;
+border: var(--uc_border);
+border-radius: var(--uc_border-radius);
+margin-left: 30px;
+margin-right:30px;
+ }
+
+.form__cell { 
+margin-bottom:5px;
+}
+
+.atributoescondido {
+color: white !important; 
+background-color: white !important;
+}
+
+p.form-control-static > .atributoescondido {
+color: white !important; 
+background-color: white !important;
+}
+
+.container-fluid {padding-right: 0px !important; padding-left: 0px !important; margin-right: auto;margin-left: auto;} 
+.container {padding-right: 0px !important; padding-left: 0px !important; margin-right: auto;margin-left: auto;margin-top:60px;}
+
+
+
